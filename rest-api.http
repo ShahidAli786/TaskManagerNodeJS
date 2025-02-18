@@ -1,0 +1,82 @@
+## API Healcheck
+http://localhost:3000/
+
+### Register User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+	"name":"test",
+	"email":"example@example.com",
+	"password":"password123"
+}
+
+### Login API Call
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+	"email":"example@example.com",
+	"password":"password123"
+}
+
+### Logout user
+POST http://localhost:3000/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+
+
+
+
+
+
+### Create new TASK
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+{
+	"title": "First Task",
+  "description": "Task Description"
+}
+
+
+### GET ALL TASK
+GET http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+
+### GET SPECIFIC TASK
+GET http://localhost:3000/tasks/67b38aff62640d490ad573bd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+
+### UPDATE SPECIFIC TASK
+PUT http://localhost:3000/tasks/67b38aff62640d490ad573bd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+{
+  "title": "First Task",
+  "description": "Task Description Updated",
+  "completed":true
+}
+
+
+### DELETE SPECIFIC TASK
+DELETE  http://localhost:3000/tasks/67b38aff62640d490ad573bd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
+
+
+
+
+
+
+
+
+
+
