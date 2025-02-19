@@ -27,6 +27,7 @@ router.post("/login", async (req: Request, res: any) => {
     password: req.body.password,
   };
   const loggedInUser = await loginUser(userData);
+
   if (loggedInUser?.error) {
     return res.status(400).json({
       error: loggedInUser.error,

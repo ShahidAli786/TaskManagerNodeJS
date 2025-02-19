@@ -31,7 +31,7 @@ export const loginUser = async (user: Partial<IUser>) => {
   }
   const existingUser = await User.findByCredentials(email, password);
   if (!existingUser) {
-    return null;
+    return { error: "User not exist" };
   }
   const token = await existingUser.generateAuthToken();
   return {

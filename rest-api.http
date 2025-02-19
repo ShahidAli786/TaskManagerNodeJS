@@ -17,7 +17,7 @@ Content-Type: application/json
 
 {
 	"email":"example@example.com",
-	"password":"password123"
+	"password":"password1234"
 }
 
 ### Logout user
@@ -49,13 +49,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZ
 
 
 ### GET SPECIFIC TASK
-GET http://localhost:3000/tasks/67b38aff62640d490ad573bd
+GET http://localhost:3000/tasks/67b498ff0325274918282041
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
 
 
 ### UPDATE SPECIFIC TASK
-PUT http://localhost:3000/tasks/67b38aff62640d490ad573bd
+PUT http://localhost:3000/tasks/67b498ff0325274918282041
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
 
@@ -67,7 +67,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZ
 
 
 ### DELETE SPECIFIC TASK
-DELETE  http://localhost:3000/tasks/67b38aff62640d490ad573bd
+DELETE  http://localhost:3000/tasks/67b498ff0325274918282041
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2IzODIzZDI5YTgwY2E0OTRjN2MyOTEiLCJpYXQiOjE3Mzk4MTg0NDF9.fERpYETFCYIBLdPRWQkArSP3eQUdT009pmxF-oA0mhw
 
